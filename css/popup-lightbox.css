@@ -1,0 +1,102 @@
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: none;
+    z-index: 1008 !important;
+}
+
+.lightbox .img-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%
+}
+
+.img-caption {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    z-index: 101;
+    color: #fff;
+    text-shadow: 1px 0.4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box
+}
+
+.lightbox .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    font-size: 24pt;
+    z-index: 101;
+    cursor: pointer;
+    color: #000;
+    border: 0
+}
+
+.lightbox .lightbox-status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    z-index: 101
+}
+
+.img-show img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block
+}
+
+.btn-prev,
+.btn-next {
+    cursor: pointer;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 101;
+    border: 0;
+    border-radius: 5px
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: 0.4s;
+    -o-transition: .4s
+}
+
+.btn-prev {
+    left: 12px;
+    rotate: 90deg;
+    background: url(../images/arrow-w.svg) no-repeat center center
+}
+
+.btn-next {
+    right: 12px;
+    rotate: -90deg;
+    background: url(../images/arrow-w.svg) no-repeat center center
+}
+
+figcaption {
+    display: none;
+}
