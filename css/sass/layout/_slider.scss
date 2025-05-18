@@ -47,9 +47,9 @@
         bottom: 38% !important;
         left: $zero;
         transform: translateX(-25%) scale(0.4);
-        // @media (min-width: 1600px) {
-        //     bottom: 50% !important;
-        // }
+        @media (min-width: 1600px) {
+            transform: translateX(0) scale(0.9);
+        }
     }
     .second-item {
         position: absolute;

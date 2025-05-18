@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: space-between; }
   .header .logo img {
-    max-width: 244px; }
+    max-width: 206px; }
     @media (max-width: 1199px) {
       .header .logo img {
         max-width: 146px; } }
@@ -340,6 +340,9 @@
     bottom: 38% !important;
     left: 0px;
     transform: translateX(-25%) scale(0.4); }
+    @media (min-width: 1600px) {
+      .slider .possessimg.move-left-small {
+        transform: translateX(0) scale(0.9); } }
   .slider .second-item {
     position: absolute;
     bottom: -100%;
