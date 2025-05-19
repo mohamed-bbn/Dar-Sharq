@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: space-between; }
   .header .logo img {
-    max-width: 206px; }
+    max-width: 198px; }
     @media (max-width: 1199px) {
       .header .logo img {
         max-width: 146px; } }

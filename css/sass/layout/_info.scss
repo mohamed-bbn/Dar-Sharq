@@ -548,7 +548,7 @@
             .inner {
                 position: relative;
                 display: block;
-                margin: $com-spacing-8 $zero $zero $com-spacing-6;
+                margin: $com-spacing-6 $zero $zero $com-spacing-6;
                 padding: $com-spacing-5 $com-spacing-3;
                 border-radius: 12px;
                 border: 1px solid #9DA9B5;
@@ -600,11 +600,14 @@
             .inner {
                 position: relative;
                 display: block;
-                margin: $zero 10px;
+                margin: $com-spacing-6 $zero $zero $com-spacing-6;
                 min-width: calc(33.333% - 20px);
                 text-align: center;
                 overflow: hidden;
                 @include transition(all 0.5s ease-in-out 0s);
+                &::last-child {
+                    margin-left: $zero;
+                }
                 @media (max-width: 999px) {
                     // min-width: 230px;
                 }
@@ -1092,8 +1095,8 @@
         }
         a {
             @include flex;
-            min-width: 33.333%;
-            max-width: 33.333%;
+            min-width: 16.6666666667%;
+            max-width: 16.6666666667%;
             height: 100px;
             padding: $zero $com-spacing-3;
             margin-top: $com-spacing-9;
@@ -1963,6 +1966,22 @@
         transform: translate(-50%, -50%);
         @media (max-width: 580px) {
             width: 184%;
+        }
+    }
+}
+
+.addstyleimg {
+    .rowitems {
+        .inner {
+            .photo {
+                height: 172px !important;
+                padding: $com-spacing-2 !important;
+                background: $white!important;
+                img {
+                    height: $fullwidth;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }
