@@ -71,13 +71,16 @@ select.form-control {
     -webkit-appearance: none;
     background: $none !important;
     font-weight: 400;
-    background: url(../images/calendar.svg) 12px center no-repeat !important;
+    background: $white url(../images/arrow.svg) 12px center no-repeat !important;
 }
 
-// textarea.form-control {
-//     height: 267px !important;
-//     resize: $none;
-// }
+textarea.form-control {
+    height: 172px !important;
+    padding: .375rem .75rem !important;
+    resize: $none;
+    border-radius: 20px !important;
+}
+
 .social {
     @include social;
 }

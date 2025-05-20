@@ -3471,7 +3471,7 @@
     .bac {
         width: $fullwidth;
         background-color: $ofwhite;
-        border: 1px dashed #919BAB;
+        border: 2px dashed #919BAB;
         @include border-radius(8px);
         padding: $com-spacing-2 $com-spacing-3;
         .input-group-btn {
