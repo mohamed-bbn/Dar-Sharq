@@ -46,6 +46,11 @@ textarea,
     }
 }
 
+.bottom svg {
+    margin-right: $zero;
+    margin-left: 8px;
+}
+
 .header {
     .burger {
         left: $auto;
@@ -122,6 +127,24 @@ textarea,
 }
 
 .slider {
+    .possessimg {
+        left: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .possessimg.move-left-small {
+        left: $auto;
+        right: $zero;
+        transform: translateX(25%) scale(0.4);
+        @media (min-width: 1600px) {
+            transform: translateX(0) scale(0.9);
+        }
+    }
+    .second-item {
+        left: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
     .item {
         .inner {
             border-right: $zero;
@@ -130,41 +153,66 @@ textarea,
             padding-left: $com-spacing-6;
         }
     }
+    .min-text {
+        .alltext {
+            &:nth-child(3) {
+                text-align: $right;
+            }
+        }
+    }
+}
+
+.slider .second-item {
+    right: unset;
+    left: 0%;
+}
+
+.slider .possessimg.move-left-small {
+    transform: translateX(25%) scale(1);
+    left: auto;
+    right: 10%;
+}
+
+.slider .item {
+    margin-right: auto;
+    margin-left: 8%;
+}
+
+.subscribe-container .subscribe .formsubscribe .form-control {
+    text-align: right;
+    padding: 0px 34px 0px 130px;
+}
+
+.subscribe-container .subscribe .formsubscribe .bottom {
+    right: auto;
+    left: 8px;
+}
+
+.subscribe-container .subscribe .formsubscribe .subicon {
+    left: auto;
+    right: 12px;
 }
 
 .about {
     .item {
         &:first-child {
-            padding-right: $com-spacing-3;
+            padding-right: 12px;
             padding-left: 76px;
             @media (max-width: 999px) {
                 padding-left: $com-spacing-3;
             }
         }
         &:last-child {
-            padding-left: $com-spacing-3;
+            padding-left: 12px;
             padding-right: 76px;
             @media (max-width: 999px) {
                 padding-right: $com-spacing-3;
-            }
-        }
-        .title {
-            font-size: 52px;
-            @media (max-width: 1199px) {
-                font-size: 38px;
-            }
-            @media (max-width:999px) {
-                font-size: 20px;
             }
         }
         p {
             padding-left: $zero;
             padding-right: 90px;
             @media (max-width: 1199px) {
-                padding-left: $zero;
-                padding-right: $com-spacing-5;
-            }
-            @media (max-width: 999px) {
                 padding: $zero;
             }
         }
@@ -173,82 +221,140 @@ textarea,
         &::before {
             right: $auto;
             left: $zero;
-            border-radius: 24px $zero $zero 24px;
+            border-radius: 24px 0px 0px 24px;
         }
         &::after {
             left: $auto;
             right: $zero;
-            border-radius: $zero 24px 24px $zero;
-        }
-    }
-    .numbers {
-        .innernumber {
-            .flex {
-                span {
-                    margin-left: $zero;
-                    margin-right: $com-spacing-1;
-                }
-            }
+            border-radius: 0px 24px 24px 0px;
         }
     }
 }
 
-.aboutinner .photo .text {
-    right: auto;
-    left: $zero;
+.title,
+.bottom {
+    text-transform: capitalize !important;
+}
+
+.numbers {
+    .innernumber {
+        .flex {
+            span {
+                margin-left: $zero;
+                margin-right: $com-spacing-1;
+            }
+        }
+    }
 }
 
 .newspapers {
     .carousel {
-        .slid-img {
-            position: absolute;
-            left: $zero;
-            top: $zero;
-            width: $fullwidth;
-            height: $fullwidth;
-            img {
-                width: $fullwidth;
-                height: $fullwidth;
-                object-fit: cover;
-            }
-            &::after {
-                @include overlay;
-            }
-            &.blue {
-                &::after {
-                    background: linear-gradient(180deg, rgba(13, 14, 17, 0.14) 0%, #0095DA 100%);
-                }
-            }
-            &.red {
-                &::after {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, #D71920 100%);
-                }
-            }
-            &.yellow {
-                &::after {
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, #EEA616 100%);
-                }
-            }
-        }
         .item {
+            max-width: 38%;
             padding: $zero $zero $com-spacing-8 $com-spacing-8;
             @media (max-width: 999px) {
+                max-width: 100%;
                 padding: $zero $com-spacing-3 $com-spacing-6 $com-spacing-3;
             }
         }
         .carousel-indicators {
-            left: $auto;
-            right: $com-spacing-7;
+            left: auto;
+            right: 32px;
             @media (max-width: 999px) {
-                left: $auto;
                 right: $zero;
             }
         }
     }
 }
 
+.subsidiaries {
+    .carousel {
+        .rowcompany {
+            .inner {
+                margin: $com-spacing-6 $com-spacing-6 $zero $zero;
+                &::last-child {
+                    margin-right: $zero;
+                }
+                @media (max-width: 999px) {
+                    margin: $com-spacing-6 $com-spacing-4 $zero $zero;
+                    &::last-child {
+                        margin-right: $zero;
+                    }
+                }
+            }
+        }
+        .rowitems {
+            .inner {
+                margin: $com-spacing-6 $com-spacing-6 $zero $zero;
+                &::last-child {
+                    margin-right: $zero;
+                }
+            }
+        }
+        .item {
+            .slid-img {
+                border-radius: 90px 0px 0px 90px;
+                margin-right: $zero;
+                margin-left: 10%;
+            }
+        }
+    }
+    .burgundy {
+        .item {
+            .slid-img {
+                border-right: $zero;
+                border-left: 50px solid #811429;
+            }
+        }
+    }
+    .red {
+        .item {
+            .slid-img {
+                border-right: $zero;
+                border-left: 50px solid $red;
+            }
+        }
+    }
+    .blue {
+        .item {
+            .slid-img {
+                border-right: $zero;
+                border-left: 50px solid #00aeef;
+            }
+        }
+    }
+    .orange {
+        .item {
+            .slid-img {
+                border-right: $zero;
+                border-left: 50px solid $orange;
+            }
+        }
+    }
+    .yellow {
+        .item {
+            .slid-img {
+                border-right: $zero;
+                border-left: 50px solid #FAA61A;
+            }
+        }
+    }
+}
+
 .distinguished {
-    &::after {}
+    &::after {
+        left: $auto;
+        right: $zero;
+    }
+    .carousel {
+        .item {
+            @media (max-width: 999px) {
+                &:last-child {
+                    padding-right: $zero;
+                }
+            }
+        }
+    }
 }
 
 .infoabout {
@@ -276,12 +382,6 @@ textarea,
 }
 
 .oursubsidiary {
-    .photo {
-        .text {
-            right: $auto;
-            left: $zero;
-        }
-    }
     .newspaper-details {
         .item {
             .innertext {
@@ -295,34 +395,176 @@ textarea,
                     }
                 }
             }
-            .subnewsparer {
-                .innertext {
-                    p {
-                        font-size: 17px;
-                        @media (max-width: 999px) {
-                            font-size: 16px;
+        }
+    }
+    &.st-tawseel {
+        .imgtawseel {
+            .text {
+                left: $auto;
+                right: $zero;
+            }
+        }
+    }
+}
+
+.listjobs {
+    .filterform {
+        .field {
+            &:first-child {
+                .form-control {
+                    padding-left: 0.75rem;
+                    padding-right: 124px;
+                }
+            }
+            .form-control {
+                padding-right: 0.75rem;
+                padding-left: 42px;
+            }
+            .icon {
+                right: auto;
+                left: 15px;
+            }
+            .bottom {
+                left: auto;
+                right: 12px;
+                top: 10px;
+            }
+        }
+    }
+    .item {
+        .list {
+            li {
+                .firstjob {
+                    .icon {
+                        margin-left: $zero;
+                        margin-right: $com-spacing-3;
+                    }
+                    .more svg {
+                        rotate: 0deg;
+                    }
+                }
+                .subjob {
+                    .innerjob {
+                        margin-left: $zero;
+                        margin-right: $com-spacing-9;
+                        @media (max-width: 767px) {
+                            margin-left: $zero;
+                            margin-right: $com-spacing-5;
+                        }
+                        &:last-child {
+                            margin-right: $zero;
+                        }
+                        .icon {
+                            svg {
+                                margin-left: $zero;
+                                margin-right: $com-spacing-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .inner {
+            .listcompany {
+                a {
+                    .firstjob {
+                        .icon {
+                            margin: $zero;
+                            margin-right: $com-spacing-3;
+                        }
+                    }
+                    .arrow {
+                        rotate: 0deg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailsjobs {
+    .item {
+        .innerdetails {
+            .subjob {
+                .innerjob {
+                    .icon {
+                        svg {
+                            margin-left: $zero;
+                            margin-right: $com-spacing-1;
+                        }
+                    }
+                }
+            }
+            .contant {
+                .minhead {
+                    .title {
+                        text-align: $right;
+                    }
+                }
+                ul {
+                    li {
+                        padding-right: $zero;
+                        padding-left: $com-spacing-4;
+                        &::before {
+                            right: auto;
+                            left: $zero;
                         }
                     }
                 }
             }
         }
     }
-    &.st-alwaraq {
-        .item {
-            .img {
-                .text {
-                    left: $auto;
-                    right: $zero;
+}
+
+.contactus {
+    .item {
+        &:first-child {
+            padding-left: $com-spacing-3;
+            padding-right: $zero;
+            @media (max-width: 999px) {
+                padding-right: $com-spacing-3;
+            }
+        }
+        &:last-child {
+            padding-right: $com-spacing-3;
+            padding-left: $zero;
+            @media (max-width: 999px) {
+                padding-left: $com-spacing-3;
+            }
+        }
+        .inner {
+            // &::before {
+            //     left: $auto;
+            //     right: $zero;
+            //     background: url(../images/c-1.png) no-repeat right top;
+            // }
+            // &::after {
+            //     left: $auto;
+            //     right: $zero;
+            //     background: url(../images/c-2.png) no-repeat right bottom;
+            // }
+            .subcontact {
+                ul {
+                    li {
+                        svg {
+                            margin-left: $zero;
+                            margin-right: $com-spacing-1;
+                        }
+                    }
                 }
             }
         }
-    }
-    &.st-alsharq {
-        .item {
-            .img {
-                .text {
-                    left: $auto;
-                    right: $zero;
+        .contactinner {
+            .innerform {
+                .field {
+                    .form-control {
+                        padding-right: 0.75rem;
+                        padding-left: 42px;
+                    }
+                    .icon {
+                        right: auto;
+                        left: 15px;
+                    }
                 }
             }
         }
@@ -360,7 +602,7 @@ textarea,
         .subscribe {
             .formsubscribe {
                 .form-control {
-                    text-align: $right;
+                    text-align: $left;
                     padding: $zero 34px $zero 130px;
                 }
                 .bottom {
@@ -378,13 +620,7 @@ textarea,
                 li {
                     .photo {
                         margin: $zero;
-                        margin-left: $com-spacing-3;
-                    }
-                    &:first-child {
-                        .photo {
-                            margin: $zero;
-                            margin-right: $com-spacing-3;
-                        }
+                        margin-right: $com-spacing-3;
                     }
                 }
             }
@@ -432,7 +668,7 @@ textarea,
         .challenges {
             .filde {
                 .form-control {
-                    padding-right: $com-spacing-3;
+                    padding-right: 0.75rem;
                     padding-left: $com-spacing-8;
                 }
                 .icon {
@@ -461,6 +697,7 @@ textarea,
             .inner {
                 ul {
                     li {
+                        margin-left: $zero;
                         margin-right: $com-spacing-3;
                         &:last-child {
                             margin: $zero;
@@ -473,21 +710,203 @@ textarea,
 }
 
 .distconference {
-    &::after {}
+    &::after {
+        left: $auto;
+        right: $zero;
+    }
     .title {
         right: $auto;
         left: $com-spacing-9;
         border-right: $zero;
         border-left: 8px solid $white;
         @media (max-width: 999px) {
-            right: $auto;
             left: $zero;
+        }
+    }
+    .subrequest {
+        .title {
+            left: auto;
         }
     }
 }
 
+.bounty {
+    &.flexbounty {
+        .title,
+        p {
+            text-align: $right;
+            @media (max-width: 999px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.subrequest {
+    text-align: $right;
+    .title,
+    p {
+        text-align: $right;
+    }
+    .w-100 {
+        padding-right: $zero;
+        padding-left: $com-spacing-8;
+        @media (max-width: 999px) {
+            padding: $com-spacing-6;
+            padding-top: $zero;
+        }
+    }
+}
+
+.socialresponsibility {
+    .listtext {
+        padding-right: $zero;
+        padding-left: $com-spacing-5;
+    }
+}
+
+.tracking,
+.followalmahbrah {
+    .inner {
+        .hello {
+            left: auto;
+            right: -78px;
+            @media (max-width: 1250px) {
+                left: auto;
+                right: -38px;
+            }
+            @media (max-width: 999px) {
+                left: auto;
+                right: $com-spacing-6;
+            }
+        }
+        .smile {
+            right: $auto;
+            left: $com-spacing-6;
+        }
+    }
+}
+
+.minsection {
+    .footer {
+        .item {
+            border-left: $zero;
+            border-right: 1px solid #3B4151;
+            @media (max-width: 999px) {
+                border: $zero;
+            }
+        }
+    }
+    .alsharq-technology {
+        .photo {
+            &::before {
+                left: auto;
+                right: 292px;
+            }
+        }
+    }
+    .about {
+        &::before {
+            left: auto;
+            right: 292px;
+        }
+    }
+    .servicesalsharq {
+        &::before {
+            left: auto;
+            right: 292px;
+        }
+        .followalsharq {
+            &::before {
+                right: auto;
+                left: 54px;
+            }
+        }
+    }
+}
+
+.serviceshaweyah {
+    .followhaweyah {
+        background: $blak url(../images/followhaweyah.png) no-repeat bottom right;
+    }
+}
+
+.minsectionadmin {
+    .footer {
+        .item {
+            border-left: $zero;
+            border-right: 1px solid #ffffff29;
+            @media (max-width: 999px) {
+                border: $zero;
+            }
+        }
+    }
+    .sharq-administration {
+        .photo {
+            &::before {
+                rotate: 0deg;
+            }
+        }
+    }
+}
+
+.jobdetails {
+    .item {
+        .details {
+            ul {
+                li {
+                    padding-right: $zero;
+                    padding-left: $com-spacing-4;
+                    &::before {
+                        right: auto;
+                        left: $zero;
+                    }
+                }
+            }
+        }
+    }
+    .minhead {
+        .reset {
+            svg {
+                margin-left: $zero;
+                margin-right: $com-spacing-1;
+            }
+        }
+    }
+}
+
+.disttawseel {
+    &::after {
+        left: $auto;
+        right: $zero;
+    }
+}
+
+.itempress {
+    .contant {
+        .features {
+            li {
+                border-left: $zero;
+                border-right: 1px solid #DBDBDB;
+                @media (max-width: 999px) {
+                    border: $zero;
+                    border-bottom: 1px solid #DBDBDB;
+                }
+                &:last-child {
+                    border: $zero;
+                    padding-bottom: $zero;
+                    margin-bottom: $zero;
+                }
+            }
+        }
+    }
+    .bottom {
+        margin: $com-spacing-6 $zero $zero -24px;
+    }
+}
+
 select.form-control {
-    background: url(../images/calendar.svg) 99% center no-repeat !important;
+    background: $white url(../images/arrow.svg) 99% center no-repeat !important;
 }
 
 .alert {
@@ -515,13 +934,6 @@ select.form-control {
     }
 }
 
-.bottom {
-    svg {
-        margin-right: $zero;
-        margin-left: $com-spacing-2;
-    }
-}
-
 .pagination {
     li {
         &:last-child {
@@ -538,7 +950,7 @@ select.form-control {
 }
 
 .scrollToTop {
-    right: $auto;
+    right: auto;
     left: $com-spacing-4;
 }
 
@@ -570,6 +982,9 @@ select.form-control {
             margin: $com-spacing-7 $com-spacing-6 $zero $zero;
             &:last-child {
                 margin-right: $zero;
+            }
+            @media (max-width: 999px) {
+                margin-top: $com-spacing-4;
             }
             svg,
             img {
