@@ -267,6 +267,111 @@ $(document).ready(function() {
 
     });
 
+
+    //////////////////////////////////////////// start step
+    let currentStep = 1;
+
+    function showStep(step) {
+        $('.step').removeClass('active');
+        $('#step' + step).addClass('active');
+
+        $('.step-block').removeClass('active done start');
+
+        if (step === 3) {
+            $('.step-block').addClass('done');
+            return;
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            const $circle = $('.step-block[data-step="' + i + '"]');
+            if (i < step) $circle.addClass('done');
+            else if (i === step && i !== 1) $circle.addClass('active');
+            else if (i === 1 && step === 1) $circle.addClass('start');
+        }
+    }
+
+    function validateStep(step) {
+        let isValid = true;
+
+        if (step === 1) {
+            const fields = [
+                { id: 'email', error: 'email-error' },
+                { id: 'fristName', error: 'frist-name' },
+                { id: 'lasttName', error: 'last-name' },
+                { id: 'nameStreet', error: 'error-street' },
+                { id: 'nameCity', error: 'error-city' },
+                { id: 'phoneNumber', error: 'error-phone' },
+            ];
+
+            fields.forEach(({ id, error }) => {
+                if (!$('#' + id).val().trim()) {
+                    $('#' + error).show();
+                    isValid = false;
+                }
+            });
+
+            const countryList = $('#countryList').val();
+            if (!countryList) {
+                $('#error-country').show();
+                isValid = false;
+            }
+        }
+
+        if (step === 2) {
+            const fields = [
+                { id: 'card', error: 'card-error' },
+                { id: 'expiry', error: 'expiry-error' },
+            ];
+
+            fields.forEach(({ id, error }) => {
+                if (!$('#' + id).val().trim()) {
+                    $('#' + error).show();
+                    isValid = false;
+                }
+            });
+        }
+        return isValid;
+    }
+
+    $('.next').click(function() {
+        if (validateStep(currentStep)) {
+            currentStep++;
+            showStep(currentStep);
+        }
+    });
+
+    $('.prev').click(function() {
+        currentStep--;
+        showStep(currentStep);
+    });
+
+    $('#pay').click(function() {
+        if (validateStep(currentStep)) {
+            $('.step').removeClass('active');
+            $('#thankyou').addClass('active');
+            showStep(3);
+        }
+    });
+
+    $('input, select').on('input change', function() {
+        const id = $(this).attr('id');
+        $('#' + id + '-error').hide();
+        if (id === 'fristName') $('#frist-name').hide();
+        if (id === 'lasttName') $('#last-name').hide();
+        if (id === 'countryList') $('#error-country').hide();
+        if (id === 'nameStreet') $('#error-street').hide();
+        if (id === 'nameCity') $('#error-city').hide();
+        if (id === 'phoneNumber') $('#error-phone').hide();
+        if (id === 'email') $('#error-error').hide();
+
+    });
+
+    showStep(currentStep);
+
+
+
+    //////////////////////////////
+
 });
 
 

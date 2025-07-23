@@ -134,10 +134,21 @@
           visibility: visible; }
         .header .navbar .cancel {
           display: block; } }
-    .header .navbar .language {
+    .header .navbar .btns {
       display: none; }
       @media screen and (max-width: 999px) {
-        .header .navbar .language {
+        .header .navbar .btns {
+          display: block;
+          margin-top: -100px; }
+          .header .navbar .btns .servpay {
+            display: inline-flex;
+            margin-bottom: 12px !important; } }
+    .header .navbar .language,
+    .header .navbar .servpay {
+      display: none; }
+      @media screen and (max-width: 999px) {
+        .header .navbar .language,
+        .header .navbar .servpay {
           display: inline-flex;
           width: 100%;
           color: #000;
@@ -265,7 +276,14 @@
         display: block;
         opacity: 1;
         visibility: visible; } }
-  .header .language {
+  .header .btns {
+    display: flex;
+    align-items: center; }
+    .header .btns .servpay {
+      margin-left: 16px;
+      color: #000; }
+  .header .language,
+  .header .servpay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,17 +292,19 @@
     padding: 0px 12px;
     border-radius: 60px;
     border: 1px solid #F48220;
-    font-size: 18px;
     cursor: pointer;
     color: #fff;
     transition: all 0.3s ease-in-out; }
     @media (max-width: 1199px) {
-      .header .language {
+      .header .language,
+      .header .servpay {
         font-size: 16px; } }
     @media screen and (max-width: 999px) {
-      .header .language {
+      .header .language,
+      .header .servpay {
         display: none; } }
-    .header .language:hover {
+    .header .language:hover,
+    .header .servpay:hover {
       background: #F48220;
       color: #fff; }
 

@@ -158,7 +158,19 @@
                 display: block;
             }
         }
-        .language {
+        .btns {
+            display: none;
+            @media screen and (max-width: 999px) {
+                display: block;
+                margin-top: -100px;
+                .servpay {
+                    display: inline-flex;
+                    margin-bottom: $com-spacing-3 !important;
+                }
+            }
+        }
+        .language,
+        .servpay {
             display: none;
             @media screen and (max-width: 999px) {
                 display: inline-flex;
@@ -341,14 +353,23 @@
         }
     }
     /* End NavMenu */
-    .language {
+    .btns {
+        display: flex;
+        align-items: center;
+        .servpay {
+            margin-left: $com-spacing-4;
+            color: $blak;
+        }
+    }
+    .language,
+    .servpay {
         @include flex;
         min-width: 115px;
         height: 44px;
         padding: $zero $com-spacing-3;
         border-radius: 60px;
         border: 1px solid $orange;
-        font-size: 18px;
+        // font-size: 18px;
         cursor: pointer;
         color: $white;
         transition: all 0.3s ease-in-out;
