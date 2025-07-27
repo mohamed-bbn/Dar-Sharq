@@ -2646,6 +2646,10 @@
             padding: $com-spacing-4;
             border-radius: 4px;
             border: 1px solid #EBEAEA;
+            @include transition(all 0.5s ease-in-out 0s);
+            &:hover {
+                box-shadow: 0px 0px 23px -4px #004BFA33;
+            }
             .photo {
                 position: relative;
                 width: $fullwidth;
@@ -2698,8 +2702,12 @@
                     padding: $com-spacing-2;
                     font-size: 14px;
                     cursor: pointer;
+                    @include transition(all 0.5s ease-in-out 0s);
                     &.blue {
                         background: $blue;
+                    }
+                    &:hover {
+                        background: $orange;
                     }
                     svg {
                         width: 22px;
@@ -3100,6 +3108,239 @@
             img {
                 max-width: 90%;
             }
+        }
+    }
+}
+
+.pageitems-service {
+    margin-bottom: -24px;
+    @media (max-width: 999px) {
+        margin: $zero;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 405px 1fr;
+        gap: $com-spacing-6;
+        @media (max-width: 999px) {
+            grid-template-columns: 1fr;
+            gap: $zero;
+        }
+    }
+    .item {
+        background: #F3F4F6;
+        margin-top: -93px;
+        padding-top: 160px;
+        @media (max-width: 999px) {
+            padding: $zero;
+            margin-top: $zero;
+            border-radius: 8px;
+        }
+        .title {
+            padding: $com-spacing-6;
+            font-size: 30px;
+            @media (max-width: 999px) {
+                text-align: center;
+                font-size: 23px;
+            }
+        }
+        .photo {
+            width: $fullwidth;
+            margin-top: $com-spacing-8;
+            @media (max-width: 999px) {
+                margin-top: $com-spacing-3;
+            }
+            img {
+                width: $fullwidth;
+                // max-height: 820px;
+                // object-fit: cover;
+                @media (max-width: 999px) {
+                    // object-fit: inherit;
+                    // max-height: initial;
+                }
+            }
+        }
+    }
+    .itemtext {
+        padding: $com-spacing-8 $zero;
+        @media (max-width: 999px) {
+            padding: $com-spacing-3 $zero;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 175%;
+        }
+        .list {
+            margin-bottom: $com-spacing-8;
+            @media (max-width: 999px) {
+                margin-bottom: $com-spacing-6;
+            }
+            li {
+                margin-top: $com-spacing-6;
+                color: #8593A3;
+                font-size: 16px;
+                @media (max-width: 999px) {
+                    margin-top: $com-spacing-3;
+                }
+            }
+        }
+    }
+    .quantity,
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F6F6F6;
+        padding: $com-spacing-2 $com-spacing-3;
+    }
+    .price {
+        background: #A5D76E;
+        margin-top: $com-spacing-2;
+        p {
+            color: $white;
+        }
+    }
+    .bottom {
+        width: $fullwidth;
+        height: 52px;
+        border-radius: 5px;
+        background: $blak;
+        margin-top: $com-spacing-7;
+        font-size: 14px;
+        @media (max-width: 999px) {
+            margin-top: $com-spacing-3;
+        }
+        &:hover {
+            background: $orange;
+        }
+        svg {
+            margin-left: $com-spacing-1;
+        }
+    }
+    .detailsform {
+        display: grid;
+        border: 1px solid #CFCFCF;
+        border-radius: 2px;
+        margin-top: $com-spacing-3;
+        padding: $com-spacing-3;
+        .table {
+            margin: $zero;
+            td,
+            th {
+                padding-right: $zero;
+                white-space: nowrap
+            }
+            th {
+                border-top: $zero;
+                padding-top: $zero;
+                font-size: 15px;
+                font-weight: 400;
+                color: $blak;
+                border-bottom: 1px solid #CFCFCF;
+            }
+            td {
+                border-top: 1px solid #CFCFCF;
+                vertical-align: middle;
+            }
+            select.form-control {
+                width: 195px;
+            }
+            .form-control {
+                font-size: 14px;
+                border-radius: 4px;
+                border: 1px solid #E3E3E3;
+                color: #8593A3;
+                &:focus {
+                    border: 1px solid $blak;
+                }
+            }
+            input.form-control {
+                background: $white;
+                width: 50px;
+                text-align: center;
+            }
+            .numberprice {
+                font-weight: 700;
+                font-size: 15px;
+                color: #A5D76E;
+            }
+            .add-btn,
+            .delete-btn {
+                @include flex;
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+                background: #A5D76E;
+                color: $white;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .delete-btn {
+                background: $red;
+            }
+        }
+    }
+    .sub-details {
+        margin-top: $com-spacing-6;
+        label {
+            color: #8593A3;
+            font-size: 14px;
+            em {
+                color: $red;
+            }
+        }
+        .form-control {
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #E3E3E3;
+            color: #8593A3;
+            &:focus {
+                border: 1px solid $blak;
+            }
+        }
+        input.form-control {
+            background: $white;
+        }
+        .bottom {
+            height: 40px;
+            margin: $zero;
+            background: $blue;
+            &:hover {
+                background: $orange;
+            }
+        }
+    }
+}
+
+.technology-service {
+    @include section;
+    .title {
+        text-align: center;
+        color: #02044A;
+        font-weight: 700;
+        @media (max-width: 999px) {
+            font-weight: 500;
+            br {
+                display: none;
+            }
+        }
+    }
+    .text-center {
+        .title {
+            display: inline-flex;
+            font-size: 25px;
+            font-weight: 400;
+            color: $white;
+            border-radius: 30px;
+            padding: $com-spacing-2 $com-spacing-6;
+            background: linear-gradient(90deg, #A2252A 0%, #EA1C25 100%);
+        }
+    }
+    .itemtabs {
+        margin-top: $com-spacing-6;
+        .minhead {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

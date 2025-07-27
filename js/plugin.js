@@ -385,3 +385,19 @@ if (typeof WOW !== 'undefined') {
     });
     wow.init();
 }
+
+
+$(document).on('click', '.add-btn', function() {
+    var $originalRow = $(this).closest('tr');
+    var $newRow = $originalRow.clone();
+    $newRow.find('.action-buttons').html(`
+        <a class="delete-btn">−</a>
+      `);
+    $newRow.find('input').val('0');
+    $newRow.find('select').prop('selectedIndex', 0);
+    $('#form-rows').append($newRow);
+});
+
+$(document).on('click', '.delete-btn', function() {
+    $(this).closest('tr').remove();
+});
