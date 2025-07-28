@@ -3334,13 +3334,189 @@
             border-radius: 30px;
             padding: $com-spacing-2 $com-spacing-6;
             background: linear-gradient(90deg, #A2252A 0%, #EA1C25 100%);
+            @media (max-width: 999px) {
+                font-size: 20px;
+            }
         }
     }
     .itemtabs {
-        margin-top: $com-spacing-6;
+        margin-top: $com-spacing-8;
+        @media (max-width: 999px) {
+            margin-top: $com-spacing-6;
+        }
         .minhead {
             display: flex;
             justify-content: space-between;
+            @media (max-width: 1199px) {
+                display: block;
+            }
+            .title {
+                display: flex;
+                align-items: center;
+                text-align: $right;
+                font-size: 28px;
+                font-weight: 600;
+                @media (max-width: 1199px) {
+                    justify-content: center;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                img {
+                    max-width: 65px;
+                    max-height: 65px;
+                    @media (max-width: 1199px) {
+                        max-width: 45px;
+                        max-height: 45px;
+                    }
+                }
+            }
+            .nav-tabs {
+                border: $zero;
+                @media (max-width: 1199px) {
+                    justify-content: center;
+                }
+                li {
+                    border: $zero;
+                    margin: $zero;
+                    margin-left: $com-spacing-3;
+                    &:last-child {
+                        margin-left: $zero;
+                    }
+                    @media (max-width: 1199px) {
+                        margin-top: $com-spacing-3;
+                    }
+                    button {
+                        border: 1px solid $blak;
+                        font-weight: 300;
+                        color: $blak;
+                        border-radius: 60px;
+                        cursor: pointer;
+                        background: $white;
+                        @media (max-width: 1199px) {
+                            font-size: 15px;
+                            padding: .2rem 1rem;
+                        }
+                        &.active {
+                            color: $white;
+                            background: linear-gradient(90deg, #EA1C25 0%, #A2252A 100%), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+                        }
+                    }
+                }
+            }
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: $fullwidth;
+            margin-top: $com-spacing-6;
+            @media (max-width: 999px) {
+                justify-content: flex-start;
+                overflow: hidden;
+                overflow-x: scroll;
+                padding-bottom: $com-spacing-3;
+                &::-webkit-scrollbar {
+                    height: 2px;
+                }
+            }
+        }
+        .column {
+            background-color: $white;
+            border-left: 1px solid #A2252A;
+            flex: 1 1 280px;
+            min-width: 25%;
+            max-width: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            @media (max-width: 999px) {
+                min-width: 300px;
+            }
+            &:last-child {
+                border-radius: 10px $zero $zero 10px;
+                ul {
+                    li {
+                        &:first-child {
+                            border-top-left-radius: 10px;
+                        }
+                        &:last-child {
+                            border-bottom-left-radius: 10px;
+                        }
+                    }
+                }
+            }
+            ul {
+                li {
+                    padding: $com-spacing-2;
+                    border-bottom: 1px solid #A2252A;
+                    text-align: center;
+                    font-size: 15px;
+                    min-height: 48px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    color: $blak;
+                    &:first-child {
+                        border-top: 1px solid #A2252A;
+                    }
+                    .price {
+                        position: relative;
+                        width: $fullwidth;
+                        border-radius: 10px;
+                        padding: $com-spacing-6 $com-spacing-4;
+                        &.bg-one {
+                            background: #F0F0F0;
+                        }
+                        &.bg-tow {
+                            background: linear-gradient(251.7deg, #BFBFBF 1.16%, #FFFFFF 98.84%);
+                        }
+                        &.bg-three {
+                            background: linear-gradient(90deg, #EA1C25 0%, #A2252A 100%), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+                            .title,
+                            .subprice b {
+                                color: $white;
+                            }
+                        }
+                        .title {
+                            font-size: 24px;
+                            font-weight: 300;
+                            color: $blak;
+                        }
+                        .subprice {
+                            margin-top: $com-spacing-3;
+                            b {
+                                font-size: 24px;
+                                font-weight: 700;
+                                color: $blak;
+                            }
+                        }
+                        .bottom {
+                            border-radius: 5px;
+                            margin-top: $com-spacing-4;
+                            background: $white;
+                            color: $blak;
+                            width: $fullwidth;
+                            max-height: 40px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .column.highlight {
+            border: $zero;
+            border-radius: $zero 10px 10px $zero;
+            background: linear-gradient(90deg, #EA1C25 0%, #A2252A 100%), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            ul {
+                li {
+                    color: $white;
+                    border-bottom: 1px solid $white;
+                    text-align: $right;
+                    &:first-child {
+                        border-top: $zero;
+                    }
+                }
+            }
         }
     }
 }

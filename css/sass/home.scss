@@ -72,6 +72,9 @@ select.form-control {
     background: $none !important;
     font-weight: 400;
     background: $white url(../images/arrow.svg) 12px center no-repeat !important;
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
 }
 
 textarea.form-control {
