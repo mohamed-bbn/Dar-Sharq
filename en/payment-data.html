@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="أفضل دار نشر في قطر ، دار الشرق. من خلال خدمات الطباعة والنشر والتوزيع والتسليم ، نجعل أفكارك تنبض بالحياة. اختر التميز معنا">
+    <meta name="description" content="أفضل دار نشر في Qatar ، Dar Alsharq. من خلال خدمات الطباعة والنشر والتوزيع والتسليم ، نجعل أفكارك تنبض بالحياة. Select التميز معنا">
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <meta name="keywords" content="">
     <title>Dar Alsharq</title>
@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header styleinner">
         <div class="container">
             <div class="logo">
                 <a href="index.html">
@@ -114,173 +114,243 @@
     </header>
     <!--End Header-->
 
-    <section class="slider-book">
-        <div class="photo">
-            <img loading="lazy" src="../images/imgbook.jpg" alt="Dar Alsharq">
+    <section class="items-payment">
+        <div class="steps-bar">
+            <div class="container">
+                <div class="inner">
+                    <div class="step-block start" data-step="1">
+                        <div class="step-circle">
+                            1
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M4.93112 9.37247C4.75464 9.37247 4.57808 9.30508 4.44351 9.1704L0.305576 5.03247C0.0361621 4.76325 0.0361621 4.32649 0.305576 4.05723C0.574639 3.78782 1.01175 3.78782 1.28081 4.05723L4.93116 7.70739L12.0298 0.608951C12.2988 0.339537 12.7359 0.339537 13.005 0.608951C13.2744 0.87817 13.2744 1.31493 13.005 1.58419L5.41874 9.1704C5.28421 9.30508 5.10761 9.37247 4.93112 9.37247Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="step-label">Payment details</div>
+                    </div>
+                    <div class="step-block" data-step="2">
+                        <div class="step-circle">
+                            2
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M4.93112 9.37247C4.75464 9.37247 4.57808 9.30508 4.44351 9.1704L0.305576 5.03247C0.0361621 4.76325 0.0361621 4.32649 0.305576 4.05723C0.574639 3.78782 1.01175 3.78782 1.28081 4.05723L4.93116 7.70739L12.0298 0.608951C12.2988 0.339537 12.7359 0.339537 13.005 0.608951C13.2744 0.87817 13.2744 1.31493 13.005 1.58419L5.41874 9.1704C5.28421 9.30508 5.10761 9.37247 4.93112 9.37247Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="step-label">Complete payment</div>
+                    </div>
+                    <div class="step-block" data-step="3">
+                        <div class="step-circle">
+                            3
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M4.93112 9.37247C4.75464 9.37247 4.57808 9.30508 4.44351 9.1704L0.305576 5.03247C0.0361621 4.76325 0.0361621 4.32649 0.305576 4.05723C0.574639 3.78782 1.01175 3.78782 1.28081 4.05723L4.93116 7.70739L12.0298 0.608951C12.2988 0.339537 12.7359 0.339537 13.005 0.608951C13.2744 0.87817 13.2744 1.31493 13.005 1.58419L5.41874 9.1704C5.28421 9.30508 5.10761 9.37247 4.93112 9.37247Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="step-label">Access to product</div>
+                    </div>
+                </div>
+                <!-- End inner -->
+            </div>
+            <!-- End container -->
         </div>
-        <!-- End photo -->
-    </section>
-    <!-- End servicedetails -->
+        <!-- End steps-bar -->
+        <form action="">
+            <div class="step active" id="step1">
+                <div class="container">
+                    <div class="rowbox">
+                        <div class="item">
+                            <h1 class="title">Payment details</h1>
+                            <div class="row">
+                                <div class="col-sm-6 field">
+                                    <label for="">First name<em>*</em></label>
+                                    <input class="form-control" type="text" id="fristName" placeholder="Enter name here">
+                                    <div class="error-message" id="frist-name">Please enter your first name.</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-6 field">
+                                    <label for="">Last name<em>*</em></label>
+                                    <input class="form-control" type="text" id="lasttName" placeholder="Enter name here">
+                                    <div class="error-message" id="last-name">Please enter your last name.</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <label for=""> Country/Region<em>*</em></label>
+                                    <select name="" id="countryList" class="form-control">
+                                        <option value="">Select</option>
+                                        <option value="qa">Qatar</option>
+                                    </select>
+                                    <div class="error-message" id="error-country"> Please enter your Country/Region</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <label for="">  Street name<em>*</em></label>
+                                    <input class="form-control" type="text" id="nameStreet" placeholder="">
+                                    <div class="error-message" id="error-street">Please enter Street name</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <label for="">City/town<em>*</em></label>
+                                    <input class="form-control" type="text" id="nameCity" placeholder="">
+                                    <div class="error-message" id="error-city"> Please enter City/town</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <label for=""> Phone number<em>*</em></label>
+                                    <input class="form-control" type="text" id="phoneNumber" placeholder="">
+                                    <div class="error-message" id="error-phone"> Please enter Phone number </div>
 
-    <section class="about">
-        <div class="container">
-            <div class="suite-number">
-                <div class="row">
-                    <div class="col-sm-4 itemsuite"> <img loading="lazy" src="../images/st-1.png" alt="Dar Alsharq"></div>
-                    <div class="col-sm-4 itemsuite"> <img loading="lazy" src="../images/logo.png" alt="Dar Alsharq"></div>
-                    <div class="col-sm-4 itemsuite">
-                        <p>رقم الجناح: <span>H4-26</span></p>
-                    </div>
-                </div>
-            </div>
-            <!-- End suite-number -->
-            <div class="exhibitions">
-                <div class="description">
-                    <h2 class="title">
-                        <span>Dar Alsharq</span> في معرض الدوحة الدولي
-                        <br> للكتاب 2025
-                    </h2>
-                    <p>مشاركة استثنائية تعكس التزامنا الثقافي ودورنا الرائد في صناعة النشر والإعلام.</p>
-                </div>
-                <!-- End description -->
-
-                <div class="numbers">
-                    <div class="innernumber">
-                        <div class="flex">
-                            <span>+</span>
-                            <h3 class="timer" data-to="5000" data-speed="3000"></h3>
-                        </div>
-                        <h4 class="title"> نسخة كتاب </h4>
-
-                    </div>
-                    <!-- End innernumber -->
-                    <div class="innernumber">
-                        <div class="flex">
-                            <span>+</span>
-                            <h3 class="timer" data-to="350" data-speed="3000"></h3>
-                        </div>
-                        <h4 class="title"> إصدار </h4>
-                    </div>
-                    <!-- End innernumber -->
-                    <div class="innernumber">
-                        <div class="flex">
-                            <span>K</span>
-                            <h3 class="timer" data-to="18" data-speed="3000"></h3>
-                        </div>
-                        <h4 class="title"> زائر</h4>
-                    </div>
-                    <!-- End innernumber -->
-                    <div class="innernumber">
-                        <div class="flex">
-                            <span>+</span>
-                            <h3 class="timer" data-to="12" data-speed="3000"></h3>
-                        </div>
-                        <h4 class="title">رواية</h4>
-                    </div>
-                    <!-- End innernumber -->
-                </div>
-                <!-- End numbers -->
-            </div>
-            <!-- End exhibitions -->
-            <div class="subsuite">
-                <div class="row">
-                    <div class="col-sm-6 itemidentity">
-                        <div class="photo">
-                            <img loading="lazy" src="../images/imgbook.jpg" alt="Dar Alsharq">
-                        </div>
-                        <!-- End photo -->
-                    </div>
-                    <!-- End item -->
-                    <div class="col-sm-6 itemidentity">
-                        <div class="w-100">
-                            <h2 class="title"> عن المشاركة</h2>
-                            <p>شاركت Dar Alsharq في النسخة الـ34 من معرض الدوحة الدولي للكتاب، الذي أقيم في مركز الدوحة للمعارض والمؤتمرات خلال الفترة من 8 إلى 17 مايو 2025. جاءت المشاركة تحت شعار "نحو فكر متجدد"، حيث قدمت الدار مجموعة من أبرز إصداراتها
-                                الصحفية والأدبية، وعرضت مشاريع رقمية وتقنية في عالم النشر.</p>
-                        </div>
-                    </div>
-                    <!-- End item -->
-
-
-                </div>
-                <!-- End row -->
-            </div>
-            <!-- End subidentity -->
-        </div>
-    </section>
-    <!-- End about -->
-
-    <section class="sectionevents">
-        <div class="container">
-            <div class="bg-inner">
-                <div class="row">
-                    <div class="col-sm-6 item">
-                        <div class="w-100">
-                            <h2 class="title"> الفعاليات</h2>
-                            <p>شاركت Dar Alsharq في النسخة الـ34 من معرض الدوحة الدولي للكتاب، الذي أقيم في مركز الدوحة للمعارض والمؤتمرات خلال الفترة من 8 إلى 17 مايو 2025. جاءت المشاركة تحت شعار "نحو فكر متجدد"، حيث قدمت الدار مجموعة من أبرز إصداراتها
-                                الصحفية والأدبية، وعرضت مشاريع رقمية وتقنية في عالم النشر.</p>
-                        </div>
-                    </div>
-                    <!-- End item -->
-                    <div class="col-sm-6 item">
-                        <div class="row">
-                            <div class="col-sm-4 subitem">
-                                <a href="#" class="photo"> <img loading="lazy" src="../images/imgbook2.jpg" alt="Dar Alsharq"></a>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <label for="">E-mail<em>*</em></label>
+                                    <input class="form-control" type="email" id="email">
+                                    <div class="error-message" id="email-error">Please enter your email</div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <a class="bottom next">Next</a>
+                                </div>
+                                <!-- ENd field -->
                             </div>
-                            <!-- End subitem -->
-                            <div class="col-sm-4 subitem">
-                                <a href="#" class="photo"> <img loading="lazy" src="../images/imgbook3.jpg" alt="Dar Alsharq"></a>
-                            </div>
-                            <!-- End subitem -->
-                            <div class="col-sm-4 subitem">
-                                <a href="#" class="photo"> <img loading="lazy" src="../images/imgbook4.jpg" alt="Dar Alsharq"></a>
-                            </div>
-                            <!-- End subitem -->
                         </div>
-                        <!-- End row -->
+                        <!-- End item -->
+                        <div class="shop-cart">
+                            <h2 class="title">Shopping cart<span>(1)</span></h2>
+                            <ul class="cartlist">
+                                <li>
+                                    <div class="flex">
+                                        <div class="photo"> <img loading="lazy" src="../images/s-1.png" alt="Dar Alsharq"></div>
+                                        <div>
+                                            <h3 class="title">The mediator</h3>
+                                            <p class="text">advertisements</p>
+                                        </div>
+                                    </div>
+                                    <span class="price">120 Qatari riyals</span>
+                                </li>
+                                <li>
+                                    <p class="text">Total purchase price</p>
+                                    <p class="text">120 Qatari riyals</p>
+                                </li>
+                                <li>
+                                    <p class="text">Final price to pay</p>
+                                    <p class="text">120 Qatari riyals </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ENd shop-cart -->
                     </div>
-                    <!-- End item -->
+                    <!-- End rowbox -->
                 </div>
-                <!-- End row -->
             </div>
-            <!-- End bg-inner -->
-            <div class="latestversions">
-                <h3 class="title">أبرز الإصدارات المعروضة</h3>
-                <div class="bg-inner">
-                    <div class="row">
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-1.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-2.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-3.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-4.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-5.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                        <div class="col-sm-4 subitem">
-                            <a href="#" class="photo"> <img loading="lazy" src="../images/va-6.jpg" alt="Dar Alsharq"></a>
-                        </div>
-                        <!-- End subitem -->
-                    </div>
-                    <!-- End row -->
-                </div>
-                <!-- End bg-inner -->
-            </div>
-            <!-- End latestversions -->
-        </div>
-    </section>
-    <!-- End sectionevents -->
+            <!-- ENd step -->
+            <div class="step" id="step2">
+                <div class="container">
+                    <div class="rowbox">
+                        <div class="item">
+                            <p>Product information will be sent to your email.</p>
+                            <div class="row">
+                                <div class="col-sm-12 field emailtext">
+                                    <label for="">E-mail<em>*</em></label>
+                                    <div class="position-relative">
+                                        <i class="icon">
+                                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.375 19.6688H5.625C2.52338 19.6688 0 17.1454 0 14.0438V6.35626C0 3.25464 2.52338 0.731262 5.625 0.731262H18.375C21.4766 0.731262 24 3.25464 24 6.35626V14.0438C24 17.1454 21.4766 19.6688 18.375 19.6688ZM5.625 2.60626C3.55725 2.60626 1.875 4.28851 1.875 6.35626V14.0438C1.875 16.1115 3.55725 17.7938 5.625 17.7938H18.375C20.4427 17.7938 22.125 16.1115 22.125 14.0438V6.35626C22.125 4.28851 20.4427 2.60626 18.375 2.60626H5.625ZM15.4353 11.8597L20.0691 8.32004C20.4806 8.00575 20.5593 7.41742 20.245 7.00595C19.9307 6.59448 19.3424 6.51573 18.9309 6.83003L14.2977 10.3692C12.9598 11.3897 11.0914 11.3904 9.75267 10.3718L5.26294 6.88173C4.85414 6.56392 4.26511 6.63775 3.94739 7.04654C3.62962 7.45534 3.70341 8.04432 4.1122 8.36209L8.60541 11.8548C8.60766 11.8566 8.60995 11.8584 8.61225 11.8601C9.6165 12.626 10.8198 13.009 12.0233 13.009C13.2269 13.009 14.4307 12.6258 15.4353 11.8597Z" fill="#9DA9B5"/>
+                                           </svg>
+                                        </i>
+                                        <input class="form-control" type="email" id="email" value="mohamedahmedat@gmail.com">
+                                    </div>
+                                </div>
+                                <!-- ENd field -->
+                                <div class="col-sm-12 field">
+                                    <div class="subinner">
+                                        <div class="minhead">
+                                            <h4 class="title">Credit card</h4>
+                                            <div class="photo"> <img loading="lazy" src="../images/visa.png" alt="Dar Alsharq"></div>
+                                        </div>
+                                        <!-- ENd minhead -->
+                                        <div class="subfield">
+                                            <label for="">Card details<em>*</em></label>
+                                            <div class="innerfield">
+                                                <div class="position-relative">
+                                                    <input class="form-control" type="number" id="expiry" placeholder="MM/YY CVC">
+                                                    <div class="error-message" id="expiry-error">Please enter an expiry date</div>
+                                                </div>
+                                                <div class="position-relative">
+                                                    <i class="icon">
+                                                      <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M23.9599 9.44687C23.9722 7.91336 24.0057 6.38083 23.9991 4.84708C23.9959 4.07481 23.9863 3.30311 23.968 2.53103C23.9514 1.83423 23.8878 1.05559 23.2085 0.672015C22.8875 0.490749 22.5132 0.448093 22.1506 0.445281C21.7699 0.442328 21.3889 0.445796 21.0082 0.445234C20.2241 0.444015 19.44 0.441437 18.6559 0.444437C15.5037 0.456484 12.3515 0.44875 9.19939 0.464547C7.63128 0.472422 6.06247 0.477062 4.49468 0.508281C3.72907 0.523515 2.95836 0.515968 2.19448 0.575031C1.55276 0.624624 0.895668 0.77814 0.50159 1.33089C0.113512 1.8752 0.0696369 2.60111 0.0668244 3.2365C0.0655119 3.52727 -0.122691 15.4585 0.138449 16.2212C0.408731 17.0107 1.0962 17.3339 1.88079 17.4045C2.68179 17.4766 3.49939 17.4673 4.3032 17.4814C5.13092 17.4959 5.95882 17.5022 6.7865 17.5185C8.41943 17.5506 10.0516 17.5709 11.6847 17.5457C13.2942 17.521 14.9041 17.5107 16.5134 17.4748C17.331 17.4566 18.1486 17.4354 18.9661 17.4116C19.7607 17.3886 20.5555 17.421 21.3497 17.401C22.0096 17.3844 22.6655 17.2582 23.188 16.8302C23.7964 16.3317 23.8269 15.5785 23.8266 14.8523C23.8264 14.5259 23.8317 14.1992 23.8394 13.8723C24.0097 12.414 23.9482 10.9129 23.9599 9.44687ZM1.10234 2.57425C1.12282 2.09561 1.2529 1.672 1.77729 1.5827C2.06361 1.53395 2.37167 1.56592 2.65981 1.57727C3.03607 1.59203 3.41243 1.59662 3.78893 1.60295C5.29442 1.62831 6.79976 1.63422 8.30548 1.64111C11.3166 1.65494 14.3275 1.6322 17.3385 1.63455C18.8127 1.63567 20.2868 1.62414 21.7609 1.62414C22.0949 1.62414 22.5281 1.58847 22.6829 1.78253C22.7711 1.93122 22.7803 2.86577 22.7805 3.53406C22.1018 3.46914 21.4101 3.48812 20.7298 3.48184C20.0099 3.47519 19.2897 3.47711 18.5698 3.46333C17.1139 3.43548 15.6578 3.43108 14.2017 3.43445C11.32 3.44106 8.44053 3.4577 5.5602 3.55623C4.06559 3.60737 2.57459 3.66414 1.08392 3.77781C1.08256 3.75433 1.08148 3.7308 1.08007 3.70727C1.08209 3.32917 1.08622 2.95108 1.10234 2.57425ZM22.8859 13.4735C22.8664 13.8709 22.8534 14.2687 22.8439 14.6665C22.8361 14.9949 22.8664 15.3465 22.7797 15.6663C22.644 16.167 22.117 16.2817 21.6469 16.3674C20.9733 16.4901 20.2466 16.4755 19.5598 16.5023C18.7872 16.5325 18.0114 16.5246 17.2382 16.53C15.688 16.5409 14.1368 16.5631 12.5867 16.5385C9.45232 16.4887 6.32117 16.4319 3.18847 16.3191C2.79945 16.3051 2.40931 16.2976 2.02081 16.2731C1.88023 16.2643 1.81142 16.258 1.68678 16.229C1.56692 16.2012 1.4525 16.1657 1.39193 16.1206C1.21536 15.9889 1.17823 15.7547 1.16417 15.5468C1.14523 15.266 1.15578 14.9829 1.15709 14.7017C1.16257 13.5202 1.16548 12.3387 1.16698 11.1572C1.16895 9.61506 1.19192 8.06795 1.17354 6.523C1.7307 6.54142 2.29081 6.5223 2.8467 6.51527C3.56567 6.50617 4.2845 6.48742 5.00342 6.47275C6.47276 6.4428 7.9422 6.41941 9.41154 6.39123C12.3193 6.33555 15.2284 6.33461 18.1365 6.31502C19.6992 6.30447 21.2619 6.32083 22.8246 6.31722C22.8433 7.23991 22.8605 8.16259 22.8696 9.08514C22.8776 9.898 22.8784 10.711 22.8805 11.5239C22.8818 12.0643 22.8788 12.6075 22.9022 13.1484C22.8968 13.2567 22.8912 13.3651 22.8859 13.4735Z" fill="#8593A3"/>
+                                                        <path d="M7.93468 11.3769C7.86525 11.1311 7.72036 10.9231 7.43616 10.8071C7.08727 10.6646 6.65316 10.7021 6.2828 10.6982C5.8673 10.6937 5.45171 10.6803 5.03635 10.6768C4.61729 10.6732 4.1963 10.69 3.7816 10.7496C3.41124 10.8028 2.97582 10.774 2.69518 11.0651C2.39218 11.3794 2.40839 11.8947 2.41533 12.3008C2.41955 12.5468 2.44683 14.1465 2.604 14.4367C2.83861 14.87 3.38316 14.8677 3.80963 14.9111C4.29999 14.961 4.79063 14.9452 5.28272 14.9503C5.77458 14.9555 6.2641 14.9525 6.7546 14.9127C7.26554 14.8713 7.82246 14.8379 7.9599 14.2365C8.01877 13.9788 8.01132 11.8753 7.97663 11.5905C7.97771 11.5094 7.96257 11.4381 7.93468 11.3769ZM6.91786 13.6756C6.91505 13.7252 6.91332 13.7746 6.91205 13.824C6.90502 13.825 6.89836 13.8257 6.89227 13.8262C6.04852 13.8874 5.2081 13.9459 4.36177 13.9208C4.05746 13.9107 3.75347 13.9207 3.44911 13.9155C3.44461 13.7388 3.44841 13.5628 3.44546 13.3862C3.4411 13.1272 3.41213 11.9775 3.45338 11.7732C3.4546 11.7672 3.45554 11.762 3.45652 11.7568C3.5003 11.7556 3.54783 11.7527 3.52904 11.7528C3.96933 11.7422 4.41624 11.7631 4.85705 11.7682C5.27335 11.7731 5.6895 11.7663 6.10594 11.7725C6.31233 11.7755 6.51849 11.7766 6.72493 11.7759C6.74157 11.7759 6.8573 11.7826 6.93113 11.7861C6.92705 11.9706 6.93043 12.229 6.93441 12.3661C6.9368 12.4491 6.93136 13.4368 6.91786 13.6756Z" fill="#8593A3"/>
+                                                        <path d="M16.4892 10.724C16.3159 10.6648 16.1855 10.8174 16.1668 10.9696C16.1386 11.1984 16.2531 11.4436 16.2494 11.679C16.2459 11.9086 16.1809 12.1253 16.0848 12.3324C15.8639 12.809 16.465 13.1429 16.7772 12.7372C17.0124 12.4314 17.0919 12.0216 17.0463 11.6431C17.0039 11.2913 16.8561 10.8492 16.4892 10.724Z" fill="#8593A3"/>
+                                                        <path d="M18.5368 10.4604C18.3532 10.0602 18.1077 9.78157 17.762 9.51635C17.5522 9.35547 17.3295 9.6558 17.4286 9.84977C17.7289 10.4375 17.9908 11.0913 17.9985 11.7595C18.0022 12.0852 17.9579 12.4085 17.865 12.7207C17.7649 13.0568 17.5445 13.3417 17.4501 13.6747C17.3652 13.9741 17.738 14.3214 18.0188 14.1119C18.3713 13.849 18.5577 13.3975 18.6913 12.989C18.8243 12.5827 18.8848 12.1473 18.856 11.7205C18.8263 11.2785 18.7213 10.8627 18.5368 10.4604Z" fill="#8593A3"/>
+                                                        <path d="M20.6705 9.96485C20.45 9.45518 20.0889 8.82447 19.5659 8.58288C19.3493 8.4828 19.0686 8.64879 19.1431 8.90791C19.2798 9.38261 19.5878 9.79947 19.7618 10.2647C19.9336 10.7239 20.0475 11.218 20.0676 11.7086C20.088 12.2061 20.0207 12.6956 19.8754 13.1715C19.803 13.4086 19.7121 13.6355 19.5976 13.8554C19.4611 14.1176 19.2241 14.366 19.229 14.673C19.2335 14.9493 19.5075 15.1842 19.7854 15.0969C20.1172 14.9926 20.2944 14.6462 20.452 14.3548C20.5972 14.0862 20.7193 13.8021 20.8177 13.5131C21.0137 12.938 21.1023 12.3157 21.0761 11.7086C21.0498 11.0996 20.912 10.523 20.6705 9.96485Z" fill="#8593A3"/>
+                                                      </svg>
+                                                    </i>
+                                                    <input class="form-control" type="number" id="card" placeholder="000 0000 0000 0000">
+                                                    <div class="error-message" id="card-error">Please enter the card number</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ENd subfield -->
+                                        <div class="flexbtn">
+                                            <a class="bottom prev">Previous</a>
+                                            <a class="bottom next">Complete</a>
+                                        </div>
+                                        <!-- ENd flexbtn -->
+                                    </div>
+                                </div>
+                                <!-- End field -->
 
+                            </div>
+                            <!-- End row -->
+                            <div class="information">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" width="24" height="24" rx="12" fill="#EAE7E7"/>
+                                <path d="M18.2249 10.3934H17.363V7.76906C17.363 5.08744 15.1814 2.9053 12.4999 2.9053C9.81745 2.9053 7.63619 5.08715 7.63619 7.76906V10.3934H6.7746C6.27872 10.3934 5.87695 10.7954 5.87695 11.2911V20.1971C5.87695 20.6928 6.27872 21.0947 6.7746 21.0947H18.225C18.7198 21.0947 19.1226 20.6928 19.1226 20.1971V11.2911C19.1226 10.7954 18.7198 10.3934 18.2249 10.3934ZM9.43129 7.76906C9.43129 6.07676 10.8076 4.70045 12.4999 4.70045C14.1917 4.70045 15.5681 6.07676 15.5681 7.76906V10.3934H9.43129V7.76906Z" fill="black"/>
+                                </svg> All information is secure and fully encrypted.
+                            </div>
+                            <!-- End information -->
+                        </div>
+                        <!-- End item -->
+                        <div class="shop-cart">
+                            <h2 class="title">Shopping cart<span>(1)</span></h2>
+                            <ul class="cartlist">
+                                <li>
+                                    <div class="flex">
+                                        <div class="photo"> <img loading="lazy" src="../images/s-1.png" alt="Dar Alsharq"></div>
+                                        <div>
+                                            <h3 class="title">The mediator</h3>
+                                            <p class="text">advertisements</p>
+                                        </div>
+                                    </div>
+                                    <span class="price">120 Qatari riyals</span>
+                                </li>
+                                <li>
+                                    <p class="text">Total purchase price</p>
+                                    <p class="text">120 Qatari riyals</p>
+                                </li>
+                                <li>
+                                    <p class="text">Final price to pay</p>
+                                    <p class="text">120 Qatari riyals </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ENd shop-cart -->
+                    </div>
+                    <!-- End rowbox -->
+                </div>
+            </div>
+            <!-- ENd step -->
+            <div class="step bg" id="step3">
+                <div class="container">
+                    <div class="thanks">
+                        <div>
+                            <h4 class="title">Thank you.</h4>
+                            <div class="icon"> <img loading="lazy" src="../images/thanks.gif" alt="Dar Alsharq"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ENd step -->
+        </form>
+    </section>
+    <!-- End items-service -->
 
     <footer class="footer">
         <div class="container">
@@ -301,7 +371,7 @@
             <!-- End subtop -->
             <div class="row">
                 <div class="col-sm-10 item">
-                    <!-- <h6 class="title">أفضل منصة إعلامية في قطر</h6> -->
+                    <!-- <h6 class="title">أفضل منصة إعلامية في Qatar</h6> -->
                     <nav class="socialicons">
                         <a class="icon-facebook" href="#" target="_blank" title="Facebook">
                             <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -419,6 +489,8 @@
     <script src="../js/wow.min.js" defer></script>
     <script src="../js/jquery.popup.lightbox.js" defer></script>
     <script src="../js/plugin.js" defer></script>
+
+
 
 </body>
 

@@ -15,8 +15,14 @@
         padding: $com-spacing-3 $zero;
         @include prefixer (box-shadow, 4px 4px 60px #0000000d, webkit moz o ms);
         .menu-link,
-        .language {
+        .language,
+        .btns .servpay {
             color: $blak;
+        }
+        .btns .servpay {
+            &:hover {
+                color: $white
+            }
         }
     }
     .container {
@@ -358,7 +364,13 @@
         align-items: center;
         .servpay {
             margin-left: $com-spacing-4;
-            color: $blak;
+            color: $white;
+            @media screen and (max-width: 999px) {
+                color: $blak;
+                &:hover {
+                    color: $white
+                }
+            }
         }
     }
     .language,
@@ -389,8 +401,20 @@
 .styleinner {
     position: relative;
     .menu-link,
-    .language {
+    .language,
+    .btns .servpay {
         color: $blak;
+    }
+    .btns .servpay {
+        &:hover {
+            color: $white
+        }
+        @media screen and (max-width: 999px) {
+            color: $blak;
+            &:hover {
+                color: $white
+            }
+        }
     }
 }
 

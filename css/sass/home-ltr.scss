@@ -75,6 +75,12 @@ textarea,
             }
         }
     }
+    .btns {
+        .servpay {
+            margin-left: $zero;
+            margin-right: $com-spacing-4;
+        }
+    }
     // Menu
     .menu {
         &-item {
@@ -993,4 +999,177 @@ select.form-control {
             }
         }
     }
+}
+
+.items-service {
+    .rowbox {
+        .item {
+            .minhead {
+                .title {
+                    text-align: $right;
+                }
+            }
+        }
+    }
+}
+
+.cus-code {
+    .close {
+        @include flex;
+        background: $orange;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        opacity: 1;
+        svg {}
+    }
+}
+
+.items-payment {
+    .rowbox {
+        .item {
+            padding: $com-spacing-7;
+            padding-left: $zero;
+            @media (max-width: 999px) {
+                padding: $com-spacing-6 $zero;
+            }
+            .subfield {
+                .innerfield {
+                    .position-relative {
+                        &:first-child {
+                            .form-control {
+                                border-bottom-left-radius: 8px;
+                                border-top-left-radius: 8px;
+                                border-bottom-right-radius: $zero;
+                                border-top-right-radius: $zero;
+                            }
+                        }
+                        &:last-child {
+                            .form-control {
+                                border-bottom-right-radius: 8px;
+                                border-top-right-radius: 8px;
+                                border-bottom-left-radius: $zero;
+                                border-top-left-radius: $zero;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .shop-cart {
+            padding: $com-spacing-7;
+            padding-right: $zero;
+            @media (max-width: 999px) {
+                padding: $zero;
+                padding-bottom: $com-spacing-6;
+            }
+            .title {
+                span {
+                    margin-right: $zero;
+                    margin-left: $com-spacing-1;
+                }
+            }
+            .cartlist {
+                li {
+                    .flex {
+                        .photo {
+                            margin-left: $zero;
+                            margin-right: $com-spacing-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .steps-bar {
+        .inner {
+            .step-block {
+                .step-circle {
+                    margin-left: $zero;
+                    margin-right: $com-spacing-1;
+                    @media (max-width: 767px) {
+                        margin: $zero $auto
+                    }
+                }
+            }
+        }
+    }
+    .step {
+        &::before {
+            left: $auto;
+            right: $zero;
+        }
+    }
+    .information {
+        svg {
+            margin-left: $zero;
+            margin-right: $com-spacing-2;
+        }
+    }
+}
+
+.technology-service {
+    .itemtabs {
+        .minhead {
+            .title {
+                text-align: $right;
+                @media (max-width: 1199px) {
+                    justify-content: center;
+                }
+            }
+            .nav-tabs {
+                li {
+                    margin: $zero;
+                    margin-right: $com-spacing-3;
+                    &:last-child {
+                        margin-right: $zero;
+                    }
+                }
+            }
+        }
+        .column {
+            border-left: $zero;
+            border-right: 1px solid #A2252A;
+            &:last-child {
+                border-radius: $zero 10px 10px $zero;
+                ul {
+                    li {
+                        &:first-child {
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 10px;
+                        }
+                        &:last-child {
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .column.highlight {
+            border-radius: 10px $zero $zero 10px;
+            ul {
+                li {
+                    text-align: $right;
+                }
+            }
+        }
+    }
+}
+
+.pageitems-service {
+    margin-bottom: -29px;
+    @media (max-width: 999px) {
+        margin: $zero;
+    }
+    .bottom svg {
+        margin-left: 0px;
+        margin-right: 4px;
+    }
+}
+
+.pageitems-service .detailsform .table td,
+.pageitems-service .detailsform .table th {
+    padding-right: .75rem;
+    padding-left: 0px;
 }

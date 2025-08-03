@@ -23,8 +23,11 @@
     -ms-box-shadow: 4px 4px 60px #0000000d;
     box-shadow: 4px 4px 60px #0000000d; }
     .header.sticky .menu-link,
-    .header.sticky .language {
+    .header.sticky .language,
+    .header.sticky .btns .servpay {
       color: #000; }
+    .header.sticky .btns .servpay:hover {
+      color: #fff; }
   .header .container {
     display: flex;
     align-items: center;
@@ -281,7 +284,12 @@
     align-items: center; }
     .header .btns .servpay {
       margin-left: 16px;
-      color: #000; }
+      color: #fff; }
+      @media screen and (max-width: 999px) {
+        .header .btns .servpay {
+          color: #000; }
+          .header .btns .servpay:hover {
+            color: #fff; } }
   .header .language,
   .header .servpay {
     display: flex;
@@ -311,8 +319,16 @@
 .styleinner {
   position: relative; }
   .styleinner .menu-link,
-  .styleinner .language {
+  .styleinner .language,
+  .styleinner .btns .servpay {
     color: #000; }
+  .styleinner .btns .servpay:hover {
+    color: #fff; }
+  @media screen and (max-width: 999px) {
+    .styleinner .btns .servpay {
+      color: #000; }
+      .styleinner .btns .servpay:hover {
+        color: #fff; } }
 
 .s-shadow {
   box-shadow: 0px 4px 16px 0px #00000040; }

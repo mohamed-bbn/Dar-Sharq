@@ -23,8 +23,11 @@
     -ms-box-shadow: 4px 4px 60px #0000000d;
     box-shadow: 4px 4px 60px #0000000d; }
     .header.sticky .menu-link,
-    .header.sticky .language {
+    .header.sticky .language,
+    .header.sticky .btns .servpay {
       color: #000; }
+    .header.sticky .btns .servpay:hover {
+      color: #fff; }
   .header .container {
     display: flex;
     align-items: center;
@@ -281,7 +284,12 @@
     align-items: center; }
     .header .btns .servpay {
       margin-left: 16px;
-      color: #000; }
+      color: #fff; }
+      @media screen and (max-width: 999px) {
+        .header .btns .servpay {
+          color: #000; }
+          .header .btns .servpay:hover {
+            color: #fff; } }
   .header .language,
   .header .servpay {
     display: flex;
@@ -311,8 +319,16 @@
 .styleinner {
   position: relative; }
   .styleinner .menu-link,
-  .styleinner .language {
+  .styleinner .language,
+  .styleinner .btns .servpay {
     color: #000; }
+  .styleinner .btns .servpay:hover {
+    color: #fff; }
+  @media screen and (max-width: 999px) {
+    .styleinner .btns .servpay {
+      color: #000; }
+      .styleinner .btns .servpay:hover {
+        color: #fff; } }
 
 .s-shadow {
   box-shadow: 0px 4px 16px 0px #00000040; }
@@ -651,6 +667,9 @@ textarea,
     .header .navbar.active {
       right: auto;
       left: 0rem; } }
+.header .btns .servpay {
+  margin-left: 0px;
+  margin-right: 16px; }
 .header .menu-item {
   margin-left: 0px;
   margin-right: 24px; }
@@ -1146,5 +1165,100 @@ select.form-control {
   .footer .textcontact li img {
     margin-left: 0px;
     margin-right: 8px; }
+
+.items-service .rowbox .item .minhead .title {
+  text-align: left; }
+
+.cus-code .close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F48220;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  opacity: 1; }
+
+.items-payment .rowbox .item {
+  padding: 32px;
+  padding-left: 0px; }
+  @media (max-width: 999px) {
+    .items-payment .rowbox .item {
+      padding: 24px 0px; } }
+  .items-payment .rowbox .item .subfield .innerfield .position-relative:first-child .form-control {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px; }
+  .items-payment .rowbox .item .subfield .innerfield .position-relative:last-child .form-control {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px; }
+.items-payment .rowbox .shop-cart {
+  padding: 32px;
+  padding-right: 0px; }
+  @media (max-width: 999px) {
+    .items-payment .rowbox .shop-cart {
+      padding: 0px;
+      padding-bottom: 24px; } }
+  .items-payment .rowbox .shop-cart .title span {
+    margin-right: 0px;
+    margin-left: 4px; }
+  .items-payment .rowbox .shop-cart .cartlist li .flex .photo {
+    margin-left: 0px;
+    margin-right: 12px; }
+.items-payment .steps-bar .inner .step-block .step-circle {
+  margin-left: 0px;
+  margin-right: 4px; }
+  @media (max-width: 767px) {
+    .items-payment .steps-bar .inner .step-block .step-circle {
+      margin: 0px auto; } }
+.items-payment .step::before {
+  left: auto;
+  right: 0px; }
+.items-payment .information svg {
+  margin-left: 0px;
+  margin-right: 8px; }
+
+.technology-service .itemtabs .minhead .title {
+  text-align: left; }
+  @media (max-width: 1199px) {
+    .technology-service .itemtabs .minhead .title {
+      justify-content: center; } }
+.technology-service .itemtabs .minhead .nav-tabs li {
+  margin: 0px;
+  margin-right: 12px; }
+  .technology-service .itemtabs .minhead .nav-tabs li:last-child {
+    margin-right: 0px; }
+.technology-service .itemtabs .column {
+  border-left: 0px;
+  border-right: 1px solid #A2252A; }
+  .technology-service .itemtabs .column:last-child {
+    border-radius: 0px 10px 10px 0px; }
+    .technology-service .itemtabs .column:last-child ul li:first-child {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 10px; }
+    .technology-service .itemtabs .column:last-child ul li:last-child {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 10px; }
+.technology-service .itemtabs .column.highlight {
+  border-radius: 10px 0px 0px 10px; }
+  .technology-service .itemtabs .column.highlight ul li {
+    text-align: left; }
+
+.pageitems-service {
+  margin-bottom: -29px; }
+  @media (max-width: 999px) {
+    .pageitems-service {
+      margin: 0px; } }
+  .pageitems-service .bottom svg {
+    margin-left: 0px;
+    margin-right: 4px; }
+
+.pageitems-service .detailsform .table td,
+.pageitems-service .detailsform .table th {
+  padding-right: .75rem;
+  padding-left: 0px; }
 
 /*# sourceMappingURL=home-ltr.css.map */
